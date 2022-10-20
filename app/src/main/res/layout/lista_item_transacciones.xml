@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#D5FFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_consecutivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="#A3E3FF"
+            android:paddingLeft="110dp"
+            android:paddingTop="5dp"
+            android:paddingRight="110dp"
+            android:paddingBottom="5dp"
+            android:text="ID consecutivo"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/fecha_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="mm/dd 00:00:00"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tipo_transaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Tipo de transaccion"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/monto_transaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Monto de transaccion"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/numero_cedula_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Numero de cedula o cuenta"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</LinearLayout>

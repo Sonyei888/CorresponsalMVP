@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#D5FFFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/nombre_corresponsal_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Nombre corresponsal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/cuenta_corresponsal_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="N° cuenta corresponsal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/nit_corresponsal_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="NIT corresponsal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/estado_corresponsal_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Estado corresponsal"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/saldo_cliente_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:background="#A3E3FF"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Saldo corresponsal"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CorresTransferencia">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_nombre_corresponsal_transferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="Nombre corresponsal"
+                android:textColor="#5DADE2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_saldo_corresponsal_transferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5DADE2"
+                android:paddingLeft="30dp"
+                android:text="Saldo Corresponsal"
+                android:textColor="#5DADE2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_cuenta_corresponsal_transferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="Cuenta Corresponsal"
+                android:textColor="#5DADE2"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/regresar_transferencia"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="devolverdtransferencia"
+                android:src="@drawable/ic_baseline_arrow_circle_left_24"
+                app:srcCompat="@drawable/ic_baseline_arrow_circle_left_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Transferencia"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#33C4E5"
+            android:backgroundTint="#33C4E5"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_numero_cedula_atransferir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#5DADE2"
+            android:ems="10"
+            android:hint="Numero de cedula a transferir"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_numero_cedula_quetransfiere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#5DADE2"
+            android:ems="10"
+            android:hint="Numero de cedula que transfiere"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_monto_transferir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#5DADE2"
+            android:ems="10"
+            android:hint="Monto a transferir"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_confirmar_transferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#33C4E5"
+            android:text="Confirmar"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/btn_cancelar_transferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="#33C4E5"
+            android:text="Cancelar"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CorresPagoTarjeta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_nombre_corresponsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="Nombre corresponsal"
+                android:textColor="#5DADE2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_saldo_corresponsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5DADE2"
+                android:paddingLeft="30dp"
+                android:text="Saldo Corresponsal"
+                android:textColor="#5DADE2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_cuenta_corresponsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="Cuenta Corresponsal"
+                android:textColor="#5DADE2"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/regresar_pago_tarjeta"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="devolverpagotarjeta"
+                android:src="@drawable/ic_baseline_arrow_circle_left_24"
+                app:srcCompat="@drawable/ic_baseline_arrow_circle_left_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pago con tarjeta"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#33C4E5"
+            android:backgroundTint="#33C4E5"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_numero_tarjeta_pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#5DADE2"
+                android:ems="10"
+                android:hint="Numero de tarjeta"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#5DADE2"
+                android:paddingLeft="10dp"
+                android:text="CVV"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit_fecha_pago_mes"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#5DADE2"
+                android:ems="10"
+                android:hint="mm"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edit_fecha_pago_dia"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:backgroundTint="#5DADE2"
+                android:ems="10"
+                android:hint="dd"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_nombre_cliente_pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#5DADE2"
+                android:ems="10"
+                android:hint="NOMBRE DEL CLIENTE"
+                android:inputType="textCapCharacters"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Cuotas"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinner_pago_tarjeta"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_valor_pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#5DADE2"
+                android:ems="10"
+                android:hint="Valor a pagar"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_confirmar_pago_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#33C4E5"
+            android:text="Confirmar"
+            app:cornerRadius="50dp" />
+
+        <Button
+            android:id="@+id/btn_cancelar_pago_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="#33C4E5"
+            android:text="Cancelar"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

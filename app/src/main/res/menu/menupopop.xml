@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_actualizar_datos"
+        android:title="Actualizar datos" />
+    <item
+        android:id="@+id/item_crear_cliente"
+        android:title="Crear cliente" />
+    <item
+        android:id="@+id/item_cerrar_sesion"
+        android:title="Cerrar sesión" />
+</menu>

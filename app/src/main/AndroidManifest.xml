@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.biblioteca.corresponsal">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Corresponsal"
+        tools:targetApi="31">
+        <activity
+            android:name=".Cancelados.PagoCancelado"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.RetiroCancelado"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.DepositoCancelado"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.TransferenciaCancelada"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.ConsultaSaldoCancelada"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.CrearClienteCancelaodo"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.ActualizarCorresCancelado"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.CrearClienteAdminCancelado"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.RegistroCorresCancelado"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelados.ConsultaCorresCancelada"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.PagoExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".CorresMostrarConsultaSaldo"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConusltaSaldo"
+            android:exported="false" />
+        <activity
+            android:name=".CorresActualizarContrasena"
+            android:exported="false" />
+        <activity
+            android:name=".CorresHistorialTransacciones"
+            android:exported="false" />
+        <activity
+            android:name=".CorresTransferenciaConfirmarPin"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.RetirosExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.DepositoExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.TransferenciaExitosa"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.ConsultaSaldoExitosa"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.RegistrarCorresExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.ActualizarCorresponsalExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".Exitosa.CrearClienteCorresExitosa"
+            android:exported="false" />
+        <activity
+            android:name=".CorresCrearCliente"
+            android:exported="false" />
+        <activity
+            android:name=".CorresIngresarPin"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConfirmarPin"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConfirmarDatosClientes"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConsultarClientes"
+            android:exported="false" />
+        <activity
+            android:name=".CorresTransferencia"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConfirmacionDeposito"
+            android:exported="false" />
+        <activity
+            android:name=".CorresDepositos"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConfirmacionRetiro"
+            android:exported="false" />
+        <activity
+            android:name=".CorresRetiros"
+            android:exported="false" />
+        <activity
+            android:name=".CorresPagoConfirmarPin"
+            android:exported="false" />
+        <activity
+            android:name=".CorresConfirmacionPagoTarjeta"
+            android:exported="false" />
+        <activity
+            android:name=".CorresPagoTarjeta"
+            android:exported="false" />
+        <activity
+            android:name=".AdminListadoCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminListadoClientes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConfirmarDatosActualizarCliente"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActualizarClientes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMostrarConsultaClientes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConsultarCedulaClientes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConfirmarDatosActualizarCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConsultarHabilitarCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConsultarCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActualizarCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConfirmarDatosCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCrearCorresponsal"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConsultarClientes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConfirmarDatosClientes"
+            android:exported="false" />
+        <activity
+            android:name=".AdminConfirmarPin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminIngresarPin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminCrearCliente"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFuncionalidades"
+            android:exported="false" />
+        <activity
+            android:name=".CorresFuncionalidades"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
